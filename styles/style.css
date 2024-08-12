@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama'); 
 body{
     font-family: "Inter", sans-serif;
     background: black;
     margin: 0 auto;
-    /* max-width: 1440px; */
+    max-width: 1440px;
 }
 /* Banner Design */
 .banner{
@@ -26,6 +27,7 @@ body{
     width: 520px;
     height: 282px;
     margin: 0;
+    line-height: 0.7;
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
@@ -35,11 +37,24 @@ body{
     height: 48px;
 }
 .banner-image{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
+    position: relative;
+}
+.banner-card-container{
+    /* position: absolute; */
 }
 .card{
     color: white;
     background-color: red;
+}
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #E6533C;
+    border-radius: 46px;
+    border: none;
+    padding: 16px 40px;
 }
 .btn1{
     font-size: 18px;
@@ -48,31 +63,78 @@ body{
     /* background-color: #E6533C; */
     border-radius: 46px;
     border: none;
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
+    /* text-align: center; */
 }
-#total-videos{
-    padding: 45px 42px;
-    margin-left: -100px;
-    margin-top: -260px;
-}
-#total-videos1{
-    position: static;
-    padding: 45px 42px;
-    margin-left: 140px;
-    margin-bottom: -160px;
-    
+.btn2{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    /* background-color: #E6533C; */
+    /* border-radius: 46px; */
+    border: none;
+    padding: 16px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54); 
 
-    
+
 }
-#videos1{
-    font-size: 4rem;
-    font-weight: 700px;
-    
+#banner-image-card1{
+    width: 206px;
+    height: 96px;
+    position: absolute;
+    bottom: 60%;
+    left: 65%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54); 
 }
-#videos{
-    font-size: 4rem;
-    font-weight: 700px;
-    
+#banner-image-card{
+    width: 206px;
+    height: 96px;
+    position: absolute;
+    bottom: 12%;
+    left: -30%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.banner-image-card-info{
+    text-align: start;
+}
+.banner-image-card-title{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.null{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+.banner-image-card-title1{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;  
+}
+.banner-image-card-des{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Navbar Design */
@@ -81,6 +143,18 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 57px 190px;
+}
+.miama{
+    font-family: Miama;
+    color: rgb(255, 255, 255);
+    font-size: 10rem;
+    font-weight: 400;
+}
+.navbar .btn{
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
 }
 .nav-links ul{
     width: 100%;
@@ -97,15 +171,7 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
-.btn{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    background-color: #E6533C;
-    border-radius: 46px;
-    border: none;
-    padding: 8px 20px;
-}
+
 .brand{
     color: rgb(230, 83, 60);
     font-size: 36px;
@@ -226,8 +292,7 @@ body{
     margin: auto 190px;
 }
 .exercise-image img{
-    /* height: 200px;
-    width: 200px ; */
+    height: 200px;
     width: 100%;
     object-fit:cover;
 }
@@ -249,11 +314,12 @@ body{
     align-items: start;
     padding: 20px;
     row-gap: 20px;
-    /* column-gap: 20px; */
+    column-gap: 20px;
+    position: relative;
     
 }
 .team-mate-images img{
-    width: 326.67px;
+    width: 100%;
     height: 272px;
     border-radius: 18px;
 }
@@ -265,9 +331,25 @@ body{
 }
 .tem-mate-description{
     color: rgba(255, 255, 255, 0.5);
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 58px;
+}
+.team-mate-detail{
+    position: absolute;
+    text-align: start;
+    margin-top: -8%;
+    margin-left: 1%;
+}
+.trainer-name{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+}
+.trainer-designation{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
 }
 /* Footer Style */
 footer{
@@ -323,9 +405,64 @@ footer{
 .bmi{
     /* background-color: aliceblue; */
     display: flex;
+    justify-content: space-between;
+    gap: 175px;
+    height: 487px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0 190px;
 }
-.bmi table{
-    border: 1px solid black;
+.bmi table td,th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
-    color: aqua;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 18px;
+    text-align: start;
+}
+.bmi table th{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+}
+table{
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+}
+.bmi input,select{
+    /* height: 48px; */
+    /* width: 100%; */
+    background-color: white; 
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 13px 20px;
+}
+.bmi select{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3);
+}
+.form-input-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 12px;
+    margin-top: 34px;
+    /* border: 1px solid tan; */
+    position: static;
+}
+.form-input-text select {
+    /* margin-left: 20px; */
+    width: 100%;
+}
+.bmi-calculator-chart{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.bmi-calculator-chart-title{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
 }
