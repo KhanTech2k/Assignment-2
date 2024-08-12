@@ -22,7 +22,7 @@ body{
 }
 .banner-title{
     color: rgb(255, 255, 255);
-    font-size: 78px;
+    font-size: 5rem;
     font-weight: 900;
     width: 520px;
     height: 282px;
@@ -31,7 +31,7 @@ body{
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     width: 520px;
     height: 48px;
@@ -179,31 +179,19 @@ body{
 }
 /* Main part design */
 .habits{
-    background-color: black;
     text-align: center;
-    /* height: 452px; */
 }
 .habits-title{
     color: rgb(255, 255, 255);
     font-size: 48px;
     font-weight: 900;
-    /* background-color: #000000; */
+    margin-bottom: 0;
 }
 .habits-description{
     color: rgba(255, 255, 255, 0.5);
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    /* background-color: #000000; */
-}
-.habits-container{
-    display: flex;
-    
-    
-}
-.habits-images-and-des{
-    /* border: 2px solid gainsboro; */
-    
+    margin-bottom: 54px;
 }
 .habits-images{
     display: flex;
@@ -250,10 +238,13 @@ body{
     justify-content:space-around;
     /* align-items: center; */
     gap: 165px;
-    background-color: gray;
+    background: rgba(255, 255, 255, 0.1);
     margin: auto 190px;
     border-radius: 18px;
     
+}
+.run-details .btn{
+    width: 224px;
 }
 .run-details-container{
     text-align: start;
@@ -465,4 +456,100 @@ table{
     color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: 900;
+}
+.bmi .btn{
+    width: 224px;
+    margin-top: 30px;
+}
+/* Short Device Responsive */
+@media screen and (max-width: 576px) {
+    .navbar{
+        padding: 52px 20px;
+    }
+    .nav-links ul{
+        display: none;
+    }
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .habits-images{
+        flex-direction: column;
+    }
+    .run-details{
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 20px;
+        border-radius: 18px;
+    }
+    .run{
+        background-color: #000000;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .run-details img{
+        width: 80%;
+        height: 312px;
+        margin-bottom: 40px;
+        border-radius: 18px;
+    }
+    .bmi{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0 20px;
+    }
+    .tem-mate-container{
+        margin: 20px;
+        text-align: center;
+        margin-bottom: 50px;   
+    }
+    .team-mate-images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
+        align-items: start;
+        padding: 20px;
+        row-gap: 20px;
+        /* column-gap: 20px; */
+        position: relative;
+        
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 20px;
+    }
+    .footer-info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer{
+        background: rgba(255, 255, 255, 0.1);
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .end-part{
+        margin: 0 20px;
+    }
+    .end-part hr{
+        border: 2px solid rgba(255, 255, 255, 0.1)
+    }
+    .end-part-info{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 23px;
+        font-weight: 400;
+        margin: 0;
+        padding: 10px;
+    }
+    
 }
