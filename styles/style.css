@@ -490,6 +490,9 @@ table{
     }
     .nav-links i{
         display:block;
+        font-size: 40px;
+    }
+    #bar{
         color: white;
     }
     .btn,.btn2{
