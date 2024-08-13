@@ -144,6 +144,9 @@ body{
     font-size: 10rem;
     font-weight: 400;
 }
+.nav-links i{
+    display: none;
+}
 .navbar .btn{
     padding: 12px 24px;
     color: rgb(255, 255, 255);
@@ -168,8 +171,9 @@ body{
 
 .brand{
     color: rgb(230, 83, 60);
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 800;
+    font-style: italic;
 }
 /* Main part design */
 .habits{
@@ -373,7 +377,7 @@ footer{
 
 .footer-description{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .footer-info-container{
@@ -483,6 +487,10 @@ table{
     }
     .nav-links ul{
         display: none;
+    }
+    .nav-links i{
+        display:block;
+        color: white;
     }
     .btn,.btn2{
         margin-top: 50px;
@@ -665,6 +673,10 @@ table{
         font-weight: 400;
         margin: 0;
         padding: 10px 0 30px;
+    }
+    footer .brand{
+        font-size: 5rem;
+        margin: 0;
     }
     
 }
